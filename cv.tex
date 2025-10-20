@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ % removed some stuff here to remove empty space
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rowan d'Auria} \\ \vspace{3pt}
+    \small
+    Email: \href{mailto:rowandauria1@gmail.com}{rowandauria1@gmail.com}; Phone: 07977568388; GitHub: \href{https://github.com/rowan-dauria}{https://github.com/rowan-dauria}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Intensive Science, MPhil, University of Cambridge (in progress)}{2025-2026}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Deep Learning:} Topics include model interpretability, explainability, probabilistic machine learning.}
+        \resumeItem{\textbf{Advanced Statistics:} Strong emphasis on Bayesian computation and model comparison.}
+        \resumeItem{\textbf{Research Project:} Self-directed project to investigate topics such as ML model interpretability, Medical Al.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Physics, BSc, Durham University, First Class Honours}{2017-2020}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Laboratory Skills and Electronics (75\%):} Automated statistical analysis, including ANOVA and regression fitting to non-linear models.}
+        \resumeItem{Achieved 100\% in coding workshops, including programming Monte Carlo integrators and object-oriented random walk methods.}
+        \resumeItem{\textbf{Mathematical Methods in Physics (87\%):} Demonstrated a thorough understanding of mathematical concepts such as Vector Calculus and Matrix Algebra.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%----------- RESEARCH -----------
+
+\section{Research}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Featurespace Project Lead - proposal document and oral presentation}{2023}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Developed auto-scaling cloud database to meet variable testing capacity. Created resources accessible to diverse stakeholders, from non-technical managers to specialist engineers, outlining potential migration approaches and recommending the optimal solution.}
+        \resumeItem{Considered a range of factors such as encryption requirements, long-term maintenance concerns and scaling costs.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Computing Research Project - 6,000 word research report, poster and Q\&A}{2020}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Full-unit independent research exploring computational statistics for simulating quantum particles, titled "Simulating Probability Amplitudes of Bound Particles with MCMC Methods".}
+        \resumeItem{Placed in top 5\% of my cohort.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%----------- EMPLOYMENT -----------
+
+\section{Employment}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Solutions Engineer, Lindus Health, London}{Mar. 2025-Oct. 2025}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Developed and deployed custom tooling to automate repetitive, high-volume tasks (eg. survey creation), significantly boosting team efficiency and reducing manual configuration time.}
+        \resumeItem{Engineered an automated documentation generator and integrated it with an LLM to create a central, accessible knowledge base, which was adopted by the entire deployment team to streamline onboarding.}
+        \resumeItem{Achieved rapid onboarding in two weeks to actively design and configure clinical trials, demonstrating immediate technical proficiency and contributing to project execution ahead of schedule.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Developer - Deployment, Featurespace, Cambridge}{Jun. 2023-Oct. 2023}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Owned the cloud migration of testing infrastructure for highly regulated financial software. Evaluated a range of strategies for cloud deployment.}
+        \resumeItem{Delivered the project with minimal oversight whilst mastering internal codebases, gaining expertise in cloud development and creating automated tests to maximise reliability.}
+        \resumeItem{Provided time critical security upgrades with no notice to ensure regulatory compliance, collaborating with multiple teams to establish efficient upgrade processes and new documentation.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Full Stack Developer, Luminance Technologies, London}{Feb. 2022-Apr. 2023}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Led the development of an interactive data dashboard for Luminance's flagship product, implementing a configurable interface that provides a qualitative overview of the client's data. Delivered project two weeks ahead of time.}
+        \resumeItem{Played a pivotal role in securing Luminance's largest ever deal by delivering a suite of new features to tight deadlines.}
+        \resumeItem{Created API functionality to enable bulk user management for companies with thousands of users.}
+        \resumeItem{Took ownership of the whole development lifecycle by designing and implementing automated tests.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Technology Specialist, Luminance Technologies, London}{Jun. 2021-Feb. 2022}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Was instrumental in securing a large client by delivering a bespoke data migration in Python. Used Pandas and supporting packages to clean a dataset containing over 100,000 data points. Produced a high quality data source that was used to pre-train Luminance's machine learning for their business case.}
+        \resumeItem{Was recommended for a software development role due to exceptional performance as a Technology Specialist.}
+        \resumeItem{Having taken ownership of the Python API and custom reporting functionality, continued to support members of the previous team after transitioning to a new role.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
