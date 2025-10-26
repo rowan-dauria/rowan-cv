@@ -74,7 +74,16 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\ % removed some stuff here to remove empty space
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOneLineSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -133,7 +142,13 @@
 \begin{center}
     \textbf{\Huge \scshape Rowan d'Auria} \\ \vspace{3pt}
     \small
-    Email: \href{mailto:rowandauria1@gmail.com}{rowandauria1@gmail.com}; Phone: 07977568388; GitHub: \href{https://github.com/rowan-dauria}{https://github.com/rowan-dauria}
+    \faAt \hspace{.5pt} \href{mailto:rowandauria1@gmail.com}{rowandauria1@gmail.com}
+    $|$
+    \faMobile \hspace{.5pt} \href{tel:447977568388}{+44 7977 568 388}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/rowan-dauria}{GitHub}
+    $|$
+    \faMapMarker \hspace{.5pt} Cambridge, London, UK
 \end{center}
 
 
@@ -143,7 +158,9 @@
 \section{Education}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    \resumeSubheading
+  
+  
+    \resumeOneLineSubheading
       {Data Intensive Science, MPhil, University of Cambridge (in progress)}{2025-2026}
       {}{}
       \resumeItemListStart
@@ -151,7 +168,17 @@
         \resumeItem{\textbf{Advanced Statistics:} Strong emphasis on Bayesian computation and model comparison.}
         \resumeItem{\textbf{Research Project:} Self-directed project to investigate topics such as ML model interpretability, Medical Al.}
       \resumeItemListEnd
-    \resumeSubheading
+      
+      
+     \resumeOneLineSubheading
+     {Alignment Fellowship, Cambridge AI Safety Hub (in progress)}{2025}{}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Point 1} ewfoiewfijewio}
+        \resumeItem{\textbf{Point 2} odopwfkwepwfek}
+      \resumeItemListEnd
+      
+      
+    \resumeOneLineSubheading
       {Physics, BSc, Durham University, First Class Honours}{2017-2020}
       {}{}
       \resumeItemListStart
@@ -159,6 +186,8 @@
         \resumeItem{Achieved 100\% in coding workshops, including programming Monte Carlo integrators and object-oriented random walk methods.}
         \resumeItem{\textbf{Mathematical Methods in Physics (87\%):} Demonstrated a thorough understanding of mathematical concepts such as Vector Calculus and Matrix Algebra.}
       \resumeItemListEnd
+      
+      
   \resumeSubHeadingListEnd
 
 
@@ -167,19 +196,18 @@
 \section{Research}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeOneLineSubheading
       {Featurespace Project Lead - proposal document and oral presentation}{2023}
       {}{}
       \resumeItemListStart
         \resumeItem{Developed auto-scaling cloud database to meet variable testing capacity. Created resources accessible to diverse stakeholders, from non-technical managers to specialist engineers, outlining potential migration approaches and recommending the optimal solution.}
         \resumeItem{Considered a range of factors such as encryption requirements, long-term maintenance concerns and scaling costs.}
       \resumeItemListEnd
-    \resumeSubheading
+    \resumeOneLineSubheading
       {Computing Research Project - 6,000 word research report, poster and Q\&A}{2020}
       {}{}
       \resumeItemListStart
-        \resumeItem{Full-unit independent research exploring computational statistics for simulating quantum particles, titled "Simulating Probability Amplitudes of Bound Particles with MCMC Methods".}
-        \resumeItem{Placed in top 5\% of my cohort.}
+        \resumeItem{Full-unit independent research exploring computational statistics for simulating quantum particles, titled "Simulating Probability Amplitudes of Bound Particles with MCMC Methods". Placed in top 5\% of my cohort.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -189,15 +217,14 @@
 \section{Employment}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeOneLineSubheading
       {Solutions Engineer, Lindus Health, London}{Mar. 2025-Oct. 2025}
-      {}{}
       \resumeItemListStart
         \resumeItem{Developed and deployed custom tooling to automate repetitive, high-volume tasks (eg. survey creation), significantly boosting team efficiency and reducing manual configuration time.}
         \resumeItem{Engineered an automated documentation generator and integrated it with an LLM to create a central, accessible knowledge base, which was adopted by the entire deployment team to streamline onboarding.}
         \resumeItem{Achieved rapid onboarding in two weeks to actively design and configure clinical trials, demonstrating immediate technical proficiency and contributing to project execution ahead of schedule.}
       \resumeItemListEnd
-    \resumeSubheading
+    \resumeOneLineSubheading
       {Software Developer - Deployment, Featurespace, Cambridge}{Jun. 2023-Oct. 2023}
       {}{}
       \resumeItemListStart
@@ -205,7 +232,7 @@
         \resumeItem{Delivered the project with minimal oversight whilst mastering internal codebases, gaining expertise in cloud development and creating automated tests to maximise reliability.}
         \resumeItem{Provided time critical security upgrades with no notice to ensure regulatory compliance, collaborating with multiple teams to establish efficient upgrade processes and new documentation.}
       \resumeItemListEnd
-    \resumeSubheading
+    \resumeOneLineSubheading
       {Full Stack Developer, Luminance Technologies, London}{Feb. 2022-Apr. 2023}
       {}{}
       \resumeItemListStart
@@ -214,7 +241,7 @@
         \resumeItem{Created API functionality to enable bulk user management for companies with thousands of users.}
         \resumeItem{Took ownership of the whole development lifecycle by designing and implementing automated tests.}
       \resumeItemListEnd
-    \resumeSubheading
+    \resumeOneLineSubheading
       {Technology Specialist, Luminance Technologies, London}{Jun. 2021-Feb. 2022}
       {}{}
       \resumeItemListStart
